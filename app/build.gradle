@@ -4,14 +4,14 @@ plugins {
 
 android {
     namespace 'com.cs.atto3probe'
-    compileSdk 35
+    compileSdk 36
 
     defaultConfig {
         applicationId 'com.cs.atto3probe'
-        minSdk 26
-        targetSdk 28
-        versionCode 1
-        versionName '0.1.0'
+        minSdk 28
+        targetSdk 36
+        versionCode 2
+        versionName '0.1.1'
     }
 
     buildTypes {
