@@ -16,10 +16,10 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.10.2'
-      - name: Build debug APK
-        run: gradle :app:assembleDebug --stacktrace
+      - name: Build release APK
+        run: gradle :app:assembleRelease --stacktrace
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: BYD-Atto3-By-CS-Camera-Probe-v0.1
-          path: app/build/outputs/apk/debug/app-debug.apk
+          name: BYD-Atto3-By-CS-Camera-Probe-v0.1.2-release
+          path: app/build/outputs/apk/release/app-release.apk
